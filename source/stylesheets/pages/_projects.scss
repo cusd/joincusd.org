@@ -1,0 +1,22 @@
+.current-projects, .past-projects {
+  @include grid-column(12);
+}
+
+.current-projects {
+  h1 {
+    @include grid-column(12);
+  }
+
+  .project {
+    @include grid-column(12);
+
+    @media #{$medium-up} {
+      @include grid-column(4);
+    }
+  }
+
+  .icon {
+    width: 100%;
+    height: 200px;
+  }
+}

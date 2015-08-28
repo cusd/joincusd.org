@@ -1,0 +1,48 @@
+.icon {
+  &--role-engineering {
+    background: image-url('engineering.svg') center center no-repeat;
+  }
+  &--role-design {
+    background: image-url('design.svg') center center no-repeat;
+  }
+  &--role-strategy {
+    background: image-url('strategy.svg') center center no-repeat;
+  }
+
+  &--project-seg {
+    background: image-url('seg.svg') center center no-repeat;
+    &--colored-bg {
+      background-color: $seg;
+    }
+  }
+  &--project-ord {
+    background: image-url('ord.svg') center center no-repeat;
+    &--colored-bg {
+      background-color: $ord;
+    }
+  }
+  &--project-gbmp {
+    background: image-url('gbmp.svg') center center no-repeat;
+    &--colored-bg {
+      background-color: $gbmp;
+    }
+  }
+  &--project-tech {
+    background: image-url('tech.svg') center center no-repeat;
+    &--colored-bg {
+      background-color: $tech;
+    }
+  }
+  &--project-cap {
+    background: image-url('cap.svg') center center no-repeat;
+    &--colored-bg {
+      background-color: $cap;
+    }
+  }
+  &--project-futures {
+    background: image-url('futures.svg') center center no-repeat;
+    &--colored-bg {
+      background-color: $futures;
+    }
+  }
+}

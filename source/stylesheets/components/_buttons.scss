@@ -1,0 +1,8 @@
+.button { 
+  @include button($full-width: true, $radius: true);
+  box-shadow: $subtle-shadow;
+
+  &.disabled {
+    @include button($full-width: true, $radius: true, $disabled: true);
+  }
+}

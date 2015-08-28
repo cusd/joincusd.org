@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="720px" height="720px" viewBox="0 0 720 720" enable-background="new 0 0 720 720" xml:space="preserve">
+<rect x="9.661" y="9.918" fill="#80C26C" width="350.21" height="350.214"/>
+<rect x="359.871" y="9.918" fill="#83C2BA" width="350.208" height="350.214"/>
+<rect x="9.661" y="360.132" fill="#3F9A8E" width="350.21" height="350.21"/>
+<rect x="359.871" y="360.132" fill="#3FAA6D" width="350.208" height="350.21"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="-15.843" width="946.329" height="735.843"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#F2F3F3" stroke-width="19.32" x1="9.661" y1="360.132" x2="710.079" y2="360.132"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#F2F3F3" stroke-width="19.32" x1="359.871" y1="720" x2="359.871" y2="19.581"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#F2F3F3" stroke-width="19.32" x1="2.839" y1="9.921" x2="714.457" y2="9.921"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#F2F3F3" stroke-width="19.32" x1="710.079" y1="0.263" x2="710.079" y2="717.164"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#F2F3F3" stroke-width="19.32" x1="0" y1="710.342" x2="719.74" y2="710.342"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#F2F3F3" stroke-width="19.32" x1="9.658" y1="0.263" x2="9.658" y2="705.704"/>
+</g>
+<text transform="matrix(1 0 0 1 457.7461 258.0562)" fill="#F2F3F3" font-family="'AvenirNext-Bold'" font-size="209.3">U</text>
+<text transform="matrix(1 0 0 1 122.8643 601.9375)" fill="#F2F3F3" font-family="'AvenirNext-Bold'" font-size="209.3">S</text>
+<text transform="matrix(1 0 0 1 453.9785 601.9375)" fill="#F2F3F3" font-family="'AvenirNext-Bold'" font-size="209.3">D</text>
+<text transform="matrix(1 0 0 1 103.1279 260.6294)" fill="#FFFFFF" font-family="'Gotham-Bold'" font-size="212.52">C</text>
+</svg>

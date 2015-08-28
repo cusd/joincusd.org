@@ -84,8 +84,11 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  # deploy.remote = 'staging' # remote name or git url, default: origin
-  # deploy.branch = 'master' # default: gh-pages
   deploy.build_before = true
+  deploy.method = :rsync
+  deploy.host          = 'staging.joincusd.org'
+  deploy.path          = '/home/deployer/www/staging.joincusd.org'
+  # Optional Settings
+  deploy.user  = 'deployer' # no default
+  deploy.clean = true # remove orphaned files on remote host, default: false
 end

@@ -2,7 +2,7 @@
   min-height: rem-calc(450);
   height: calc(100vh - 180px);
   width: 100%;
-  @include video-thumbnail($image: "video-1.jpg");
+  @include video-thumbnail($image: "videos/video-1.jpg");
 
   &__overlay {
     background-color: rgba($primary-color, 0.5);

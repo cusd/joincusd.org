@@ -37,7 +37,7 @@
 
 # Reload the browser automatically whenever files change
 configure :development do
-  # activate :livereload
+  activate :livereload
 end
 
 # Methods defined in the helpers block are available in templates
@@ -84,7 +84,6 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.build_before = true
   deploy.method = :rsync
   deploy.host          = 'staging.joincusd.org'
   deploy.path          = '/home/deployer/www/staging.joincusd.org'

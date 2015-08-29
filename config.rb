@@ -70,7 +70,9 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  activate :asset_hash do |opts|
+    opts.ignore << 'favicon/*'
+  end
 
   # Use relative URLs
   activate :relative_assets
@@ -83,11 +85,23 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :deploy do |deploy|
-  deploy.method = :rsync
-  deploy.host          = 'staging.joincusd.org'
-  deploy.path          = '/home/deployer/www/staging.joincusd.org'
-  # Optional Settings
-  deploy.user  = 'deployer' # no default
-  deploy.clean = true # remove orphaned files on remote host, default: false
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.method  = :rsync
+    deploy.user    = 'deployer'
+    deploy.clean   = true
+    deploy.host    = 'staging.joincusd.org'
+    deploy.path    = '/home/deployer/www/joincusd.org'
+    deploy.flags   = '-rltgoDvzOI --no-p --del'
+  end
+else
+  activate :deploy do |deploy|
+    deploy.method  = :rsync
+    deploy.user    = 'deployer'
+    deploy.clean   = true
+    deploy.host    = 'staging.joincusd.org'
+    deploy.path    = '/home/deployer/www/staging.joincusd.org'
+    deploy.flags   = '-rltgoDvzOI --no-p --del'
+  end
 end

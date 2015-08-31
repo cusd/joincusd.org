@@ -20,3 +20,21 @@
     height: 200px;
   }
 }
+
+.past-projects {
+  .project {
+    @include grid-row();
+
+    &:not(:first-child) {
+      margin-top: rem-calc(44);
+    }
+
+    &__image {
+      @include grid-column($columns: 3);
+    }
+
+    &__description {
+      @include grid-column($columns: 9);
+    }
+  }
+}

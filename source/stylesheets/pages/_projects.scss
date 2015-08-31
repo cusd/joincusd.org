@@ -93,11 +93,21 @@
     }
 
     &__image {
-      @include grid-column($columns: 3);
+      @include grid-column($columns: 12);
+      margin-bottom: rem-calc(16);
+
+      @media #{$medium-up} {
+        @include grid-column($columns: 3);
+        padding: rem-calc(0 20);
+      }
     }
 
     &__description {
-      @include grid-column($columns: 9);
+      @include grid-column($columns: 12);
+
+      @media #{$medium-up} {
+        @include grid-column($columns: 9);
+      }
     }
   }
 }

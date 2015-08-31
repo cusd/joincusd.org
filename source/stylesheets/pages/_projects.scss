@@ -9,15 +9,78 @@
 
   .project {
     @include grid-column(12);
+    margin-bottom: rem-calc(32);
 
     @media #{$medium-up} {
       @include grid-column(4);
+    }
+
+    h3 {
+      line-height: 1.2;
+      margin-bottom: rem-calc(4);
     }
   }
 
   .icon {
     width: 100%;
-    height: 200px;
+    height: 0;
+    padding-bottom: 100%;
+    margin-bottom: rem-calc(24);
+
+    &--project-seg {
+      background-size: rem-calc(180);
+      @media #{$medium-up} {
+        background-size: rem-calc(155);
+      }
+      @media #{$large-up} {
+        background-size: rem-calc(175);
+      }
+    }
+    &--project-ord {
+      background-size: rem-calc(210);
+      @media #{$medium-up} {
+        background-size: rem-calc(180);
+      }
+      @media #{$large-up} {
+        background-size: rem-calc(210);
+      }
+    }
+    &--project-gbmp {
+      background-size: rem-calc(180);
+      @media #{$medium-up} {
+        background-size: rem-calc(160);
+      }
+      @media #{$large-up} {
+        background-size: rem-calc(177);
+      }
+    }
+    &--project-tech {
+      background-size: rem-calc(200);
+      @media #{$medium-up} {
+        background-size: rem-calc(160);
+      }
+      @media #{$large-up} {
+        background-size: rem-calc(180);
+      }
+    }
+    &--project-cap {
+      background-size: rem-calc(180);
+      @media #{$medium-up} {
+        background-size: rem-calc(140);
+      }
+      @media #{$large-up} {
+        background-size: rem-calc(165);
+      }
+    }
+    &--project-futures {
+      background-size: rem-calc(180);
+      @media #{$medium-up} {
+        background-size: rem-calc(150);
+      }
+      @media #{$large-up} {
+        background-size: rem-calc(170);
+      }
+    }
   }
 }
 

@@ -11,7 +11,14 @@
 
 .site-logo {
   @include grid-column($columns:5);
-  overflow-y: visible;
+
+  @media #{$medium-up} {
+    @include grid-column($columns:2);
+  }
+  
+  @media #{$large-up} {
+    @include grid-column($columns:5);
+  }
   
   &__image {
     float: left;
@@ -28,7 +35,7 @@
     color: $logo-text-gray;
     display: none;
 
-    @media #{$medium-up} {
+    @media #{$large-up} {
       display: block;
     }
   }
@@ -39,8 +46,8 @@
 
   @media #{$medium-up} {
     display: block;
-    @include grid-column($columns:7);
     height: 100%;
+    @include grid-column($columns:10);
 
     &__menu { 
       list-style: none;
@@ -74,15 +81,24 @@
 
         > .button { 
           margin: rem-calc(40 0);
-          // font-size: rem-calc(16);
         }
       }
     }
+  }
+
+  @media #{$large-up} {
+    @include grid-column($columns:7);
   }
 }
 
 .mobile-nav {
   float: right;
+  margin-right: rem-calc(10);
+  width: rem-calc(120);
+
+  .button { 
+    margin: rem-calc(40 0);
+  }
 
   @media #{$medium-up} {
     display: none;

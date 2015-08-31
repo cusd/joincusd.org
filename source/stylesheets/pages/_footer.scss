@@ -1,7 +1,19 @@
 .site-footer {
   background: $primary-color;
   margin-top: rem-calc(72);
-  padding: rem-calc(72 0 32);
+  padding: rem-calc(32 0);
+
+  @media #{$medium-up} {
+    padding: rem-calc(72 0 32);
+  }
+
+  &__mobile-cta {
+    padding: rem-calc(0 10);
+
+    @media #{$medium-up} {
+      display: none;
+    }
+  }
 
   &__links-wrapper {
     @include grid-row();

@@ -2,7 +2,12 @@
   @include button($full-width: true, $radius: true);
   box-shadow: $subtle-shadow;
 
-  &.disabled {
+  &--disabled {
     @include button($full-width: true, $radius: true, $disabled: true);
+  }
+
+  &--inverse {
+    @include button($full-width: true, $radius: true, $bg: $body-background);
+    font-weight: $font-weight-bold;
   }
 }

@@ -1,10 +1,11 @@
 //= require jquery/dist/jquery.min.js
-//= require foundation/js/foundation.js
+//= require foundation/js/foundation/foundation.js
 //= require foundation/js/foundation/foundation.reveal.js
 
 $(document).foundation({
   reveal:{
     dismiss_modal_class: 'video-modal__close-button',
+    animation: 'fade'
   }
 });
 

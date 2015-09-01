@@ -138,7 +138,7 @@ $subtle-shadow: rem-calc(0 0 2 0 ) rgba(0,0,0,0.2);
 
 // We use these as default colors throughout
 $primary-color: $cusd-green;//#008CBA;
-// $secondary-color: #e7e7e7;
+$secondary-color: #84C3BB;//#e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -146,7 +146,7 @@ $primary-color: $cusd-green;//#008CBA;
 
 // We use these to control various global styles
 $body-bg: $body-background;//$white;
-// $body-font-color: $jet;
+$body-font-color: #666666;//$jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -234,7 +234,7 @@ $include-html-type-classes: true;//$include-html-classes;
 // $header-font-family: $body-font-family;
 $header-font-weight: $font-weight-light;//$font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: #333333;//$jet;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;

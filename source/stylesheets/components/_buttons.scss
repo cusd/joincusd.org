@@ -13,7 +13,7 @@
   &--inverse {
     @include button($full-width: true, $radius: true, $bg: #fff);
     font-weight: $font-weight-bold;
-    border: 1px solid $primary-color;
+    border: 2px solid $primary-color;
 
     &:hover {
       background: $primary-color;

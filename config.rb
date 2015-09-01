@@ -60,7 +60,9 @@ configure :build do
 
   activate :relative_assets
 
-  activate :autoprefixer
+  activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 9']
+  end
 
   activate :imageoptim
 end

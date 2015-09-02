@@ -1,0 +1,28 @@
+name: Engineering
+tagline: "Research, development and building for a better world."
+description:
+  "
+  "
+photos:
+  - role-photos/engineering-1.jpg
+  - role-photos/engineering-2.jpg
+  - role-photos/engineering-3.jpg
+openings:
+  - title: Software Engineer
+    desc: "Leverage the latest technologies to increase the project&#8217;s impact."
+  - title: Power Engineer
+    desc: Scope out the needs and requirements for a new residential development.
+  - title: Embeded/Firmware Engineer
+    desc: Work with various embeded systems to create physical computing interfaces.
+  - title: Full-Stack Engineer
+    desc: "Leverage the latest technologies to increase the project&#8217;s impact."
+  - title: Mobile Developer
+    desc: "Leverage the latest technologies to increase the project&#8217;s impact."
+  - title: Motivated Engineer
+    desc: A proven go-getter with the technical chops to back it up.
+  - title: Data Scientist
+    desc: "An analytical mind who&#8217;s always on the lookout for some new data insight."
+  - title: Mapping/GIS Technician
+    desc: A tech-savvy individual with an eye for the bird’s eye view.
+  - title: Data Strategist
+    desc: Use data to identify key actions to support the project and organization.

@@ -1,3 +1,5 @@
+// These styles are also re-used for the role pages
+
 .project-description {
   @include grid-row();
   padding-top: rem-calc(32);
@@ -34,7 +36,21 @@
         }
 
       }
-
+      &--role-engineering--role-page {
+        background-size: rem-calc(190);
+        @media #{$medium-up} {
+          background-size: rem-calc(180);
+        }
+      }
+      &--role-design--role-page {
+        background-size: rem-calc(1200);
+        @media #{$medium-up} {
+          background-size: rem-calc(160);
+        }
+      }
+      &--role-strategy--role-page {
+        background-size: rem-calc(180);
+      }
       &--project-seg {
         background-size: rem-calc(180);
       }

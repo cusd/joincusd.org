@@ -74,16 +74,14 @@
             <li><a href="https://docs.google.com/a/cornell.edu/forms/d/1xoWpz59v7SkpzRUcXRuvBT0qw4RmWI0didgraXt-Vj0/viewform">Apply</a></li>
           </ul>
         </div>
-        <!-- <div class="site-footer__links-wrapper__link-list">
+        <div class="site-footer__links-wrapper__link-list">
           <h5>Roles</h5>
           <ul>
-            <% sitemap.resources.each do |resource| %>
-              <% if resource.path =~ /^roles\// %>
-                <li><%= link_to resource.data.title, resource %></li>
-              <% end %>
+            <% data.roles.each do |role| %>
+              <li><%= link_to role[1].name, "/roles/#{role[0]}" %></li>
             <% end %>
           </ul>
-        </div> -->
+        </div>
         <!-- <div class="site-footer__links-wrapper__link-list">
           <h5>Students</h5>
           <ul>

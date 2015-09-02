@@ -32,6 +32,10 @@ data.projects.each do |project|
   proxy "/projects/#{project[0]}.html", "/projects/template.html", :locals => { project: project[1], short_name: project[0] }, :ignore => true
 end
 
+data.roles.each do |role|
+  proxy "/roles/#{role[0]}.html", "/roles/template.html", :locals => { role: role[1], short_name: role[0] }, :ignore => true
+end
+
 ###
 # Helpers
 ###

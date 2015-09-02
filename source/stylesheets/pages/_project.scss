@@ -38,7 +38,7 @@
         background-size: rem-calc(180);
       }
       &--project-tech {
-        background-size: rem-calc(200);
+        background-size: rem-calc(160);
       }
       &--project-cap {
         background-size: rem-calc(140);
@@ -142,6 +142,15 @@
 
     .panel {
       @include callout-panel();
+    }
+  }
+
+  &__no-openings {
+    width: 100% !important;
+    padding: 0 !important;
+    
+    .panel {
+      padding-bottom: rem-calc(24);
     }
   }
 }

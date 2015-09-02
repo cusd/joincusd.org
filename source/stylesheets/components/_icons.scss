@@ -2,14 +2,50 @@
   &--role-engineering {
     background: image-url('icons/roles/engineering.svg') center center no-repeat;
     background-size: rem-calc(157 122);
+    &--colored {
+      background: image-url('icons/roles/engineering-color.svg') center center no-repeat;
+    }
+    &--role-page {
+      background: image-url('icons/roles/engineering-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/roles/engineering-color.svg') top right no-repeat;
+      }
+    }
+    &--colored-bg {
+      background-color: $primary-color;
+    }
   }
   &--role-design {
     background: image-url('icons/roles/design.svg') center center no-repeat;
     background-size: rem-calc(123 123);
+    &--colored {
+      background: image-url('icons/roles/design-color.svg') center center no-repeat;
+    }
+    &--role-page {
+      background: image-url('icons/roles/design-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/roles/design-color.svg') top right no-repeat;
+      }
+    }
+    &--colored-bg {
+      background-color: $primary-color;
+    }
   }
   &--role-strategy {
     background: image-url('icons/roles/strategy.svg') center center no-repeat;
     background-size: rem-calc(151 114);
+    &--colored {
+      background: image-url('icons/roles/strategy-color.svg') center center no-repeat;
+    }
+    &--role-page {
+      background: image-url('icons/roles/strategy-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/roles/strategy-color.svg') top right no-repeat;
+      }
+    }
+    &--colored-bg {
+      background-color: $primary-color;
+    }
   }
 
   &--project-seg {

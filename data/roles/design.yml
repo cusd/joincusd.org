@@ -1,0 +1,30 @@
+name: Design
+tagline: Putting the human touch on our projects and communications.
+description:
+  "
+  "
+photos:
+  - role-photos/design-1.jpg
+  - role-photos/design-2.jpg
+  - role-photos/design-3.jpg
+openings:
+  - title: Visual Designer
+    desc: A strong eye for aesthetics and a working knowledge of print or web media.
+  - title: Communication Designer
+    desc: "A craftsperson of words, points, pixels and public perception."
+  - title: UX/Product Designer
+    desc: Help build a product full-stack; from brand to research to user interaction.
+  - title: Architect
+    desc: A team player who combines inspiring vision with healthy practicality.
+  - title: Landscape Architect
+    desc: Bring a knowledge of landscape or agriculture to the team.
+  - title: Interior Designer
+    desc: Ensure the envrionment we create is as healthy and safe as it is efficient.
+  - title: Photographer
+    desc: "Capture the essence of what we do and what it&#8217;s like to be in CUSD."
+  - title: Videographer
+    desc: A budding documentatarian to help us tell the world our story.
+  - title: Motion Designer
+    desc: Work with a team to turn raw footage into something extraordinary.
+  - title: Design Strategist
+    desc: A master of the Human-Centered Design process who wants to make a difference.

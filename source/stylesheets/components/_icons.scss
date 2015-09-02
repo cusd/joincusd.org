@@ -15,7 +15,10 @@
   &--project-seg {
     background: image-url('icons/projects/seg.svg') center center no-repeat;
     &--colored {
-      background: image-url('icons/projects/seg-color.svg') top right no-repeat;
+      background: image-url('icons/projects/seg-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/projects/seg-color.svg') top right no-repeat;
+      }
     }
     &--colored-bg {
       background-color: $seg;
@@ -24,7 +27,10 @@
   &--project-ord {
     background: image-url('icons/projects/ord.svg') center center no-repeat;
     &--colored {
-      background: image-url('icons/projects/ord-color.svg') top right no-repeat;
+      background: image-url('icons/projects/ord-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/projects/ord-color.svg') top right no-repeat;
+      }
     }
     &--colored-bg {
       background-color: $ord;
@@ -33,7 +39,10 @@
   &--project-gbmp {
     background: image-url('icons/projects/gbmp.svg') center center no-repeat;
     &--colored {
-      background: image-url('icons/projects/gbmp-color.svg') top right no-repeat;
+      background: image-url('icons/projects/gbmp-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/projects/gbmp-color.svg') top right no-repeat;
+      }
     }
     &--colored-bg {
       background-color: $gbmp;
@@ -42,7 +51,10 @@
   &--project-tech {
     background: image-url('icons/projects/tech.svg') center center no-repeat;
     &--colored {
-      background: image-url('icons/projects/tech-color.svg') top right no-repeat;
+      background: image-url('icons/projects/tech-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/projects/tech-color.svg') top right no-repeat;
+      }
     }
     &--colored-bg {
       background-color: $tech;
@@ -51,7 +63,10 @@
   &--project-cap {
     background: image-url('icons/projects/cap.svg') center center no-repeat;
     &--colored {
-      background: image-url('icons/projects/cap-color.svg') top right no-repeat;
+      background: image-url('icons/projects/cap-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/projects/cap-color.svg') top right no-repeat;
+      }
     }
     &--colored-bg {
       background-color: $cap;
@@ -60,7 +75,10 @@
   &--project-futures {
     background: image-url('icons/projects/futures.svg') center center no-repeat;
     &--colored {
-      background: image-url('icons/projects/futures-color.svg') top right no-repeat;
+      background: image-url('icons/projects/futures-color.svg') top center no-repeat;
+      @media #{$large-up} {
+        background: image-url('icons/projects/futures-color.svg') top right no-repeat;
+      }
     }
     &--colored-bg {
       background-color: $futures;

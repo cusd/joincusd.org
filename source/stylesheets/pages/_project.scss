@@ -3,11 +3,59 @@
   padding-top: rem-calc(32);
 
   &__logo {
-    @include grid-column($columns: 3);
+    @include grid-column($columns: 12);
+
+    @media #{$medium-up} {
+      @include grid-column($columns: 3);
+    }
+
+    .icon {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      margin-bottom: rem-calc(32);
+
+      &.medium-up {
+        display: none;
+      }
+
+      @media #{$medium-up} {
+        &.small-only{
+          display: none;
+        }
+        &.medium-up {
+          display: block;
+        }
+      }
+
+      &--project-seg {
+        background-size: rem-calc(180);
+      }
+      &--project-ord {
+        background-size: rem-calc(210);
+      }
+      &--project-gbmp {
+        background-size: rem-calc(180);
+      }
+      &--project-tech {
+        background-size: rem-calc(200);
+      }
+      &--project-cap {
+        background-size: rem-calc(180);
+      }
+      &--project-futures {
+        background-size: rem-calc(180);
+      }
+    }
   }
 
   &__main {
-    @include grid-column($columns: 8, $offset: 1);
+    @include grid-column($columns: 12);
+
+    @media #{$medium-up} {
+      @include grid-column($columns: 8, $offset: 1);
+    }
+
     h1 {
       line-height: 1;
       margin-bottom: 0;
@@ -32,7 +80,11 @@
   }
 
   &__gallery {
-    @include block-grid($per-row: 3, $base-style: true);
+    @include block-grid($per-row: 2, $base-style: true);
+
+    @media #{$medium-up} {
+      @include block-grid($per-row: 3, $base-style: true);
+    }
 
     img {
       // box-shadow: $subtle-shadow;
@@ -71,14 +123,22 @@
 
 .project-openings {
   @include grid-row();
-  padding-top: rem-calc(32);
+  padding-top: rem-calc(48);
+
+  &__wrapper {
+    @include grid-column($columns: 12);
+  }
 
   h3 {
     margin-bottom: rem-calc(24);
   }
 
   &__list {
-    @include block-grid($per-row: 3, $base-style: true);
+    @include block-grid($per-row: 1, $base-style: true);
+
+    @media #{$medium-up} {
+      @include block-grid($per-row: 3, $base-style: true);
+    }
 
     .panel {
       @include callout-panel();

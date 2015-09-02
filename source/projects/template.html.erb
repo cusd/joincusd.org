@@ -2,7 +2,8 @@
 
 <section class="project-description">
   <div class="project-description__logo">
-    <%= image_tag "icons/projects/#{short_name}-color.svg" %>
+    <div class="medium-up icon icon--project-<%= short_name %> icon--project-<%= short_name %>--colored"></div>
+    <div class="small-only icon icon--project-<%= short_name %> icon--project-<%= short_name %>--colored-bg"></div>
   </div>
   <div class="project-description__main">
     <h1><%= project.name %></h1>
@@ -24,25 +25,27 @@
 </section>
 
 <section class="project-openings">
-  <h3>What We're Looking For</h3>
-  <ul class="project-openings__list">
-    <% project.openings.each do |o| %>
+  <div class="project-openings__wrapper">
+    <h3>What We're Looking For</h3>
+    <ul class="project-openings__list" data-equalizer data-equalizer-mq="medium-up">
+      <% project.openings.each do |o| %>
+        <li>
+          <div class="panel" data-equalizer-watch>
+            <h4><%= o.title %></h4>
+            <p><%= o.desc %></p>
+            <%= link_to "Apply Now", o.link || 'https://docs.google.com/a/cornell.edu/forms/d/1xoWpz59v7SkpzRUcXRuvBT0qw4RmWI0didgraXt-Vj0/viewform', class: 'button' %>
+          </div>
+        </li>
+      <% end %>
       <li>
-        <div class="panel">
-          <h4><%= o.title %></h4>
-          <p><%= o.desc %></p>
-          <%= link_to "Apply Now", o.link || 'https://docs.google.com/a/cornell.edu/forms/d/1xoWpz59v7SkpzRUcXRuvBT0qw4RmWI0didgraXt-Vj0/viewform', class: 'button' %>
+        <div class="panel" data-equalizer-watch>
+          <h4>Missing Something?</h4>
+          <p>Don’t see that perfect fit? No worries, apply as a wildcard!</p>
+          <%= link_to "Apply Now", 'https://docs.google.com/a/cornell.edu/forms/d/1xoWpz59v7SkpzRUcXRuvBT0qw4RmWI0didgraXt-Vj0/viewform', class: 'button' %>
         </div>
       </li>
-    <% end %>
-    <li>
-      <div class="panel">
-        <h4>Missing Something?</h4>
-        <p>Don’t see that perfect fit? No worries, apply as a wildcard!</p>
-        <%= link_to "Apply Now", 'https://docs.google.com/a/cornell.edu/forms/d/1xoWpz59v7SkpzRUcXRuvBT0qw4RmWI0didgraXt-Vj0/viewform', class: 'button' %>
-      </div>
-    </li>
-  </ul>
+    </ul>
+  </div>
 </section>
 
 

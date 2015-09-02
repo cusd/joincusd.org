@@ -22,16 +22,12 @@ photos:
   - project-photos/gbmp-3.jpg
 openings:
   - title: Entrepreneur In Chief
-    desc: Does stuff
+    desc: Someone with entreprenurial vision to help take the project to new heights.
   - title: Business Developer
-    desc: Does stuff
-    link: #
+    desc: "A person who&#8217;s not afraid to pick up a phone and (kick) open some doors."
   - title: Software Engineer
-    desc: Does stuff
-    link: #
+    desc: "Leverage the latest technologies to increase the project&#8217;s impact."
   - title: Data Scientist
-    desc: Does stuff
-    link: #
+    desc: "An analytical mind who&#8217;s always on the lookout for some new data insight."
   - title: UX/Product Designer
-    desc: Does stuff
-    link: #
+    desc: "Help build a product full-stack; from brand to research to user interaction."

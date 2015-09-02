@@ -1,12 +1,14 @@
 //= require jquery/dist/jquery.min.js
 //= require foundation/js/foundation/foundation.js
+//= require foundation/js/foundation/foundation.equalizer.js
 //= require foundation/js/foundation/foundation.reveal.js
 
 $(document).foundation({
   reveal:{
     dismiss_modal_class: 'video-modal__close-button',
     animation: 'fade'
-  }
+  },
+  equalizer: {equalize_on_stack: true}
 });
 
 $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {

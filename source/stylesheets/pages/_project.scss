@@ -39,16 +39,25 @@
         background-size: rem-calc(180);
       }
       &--project-ord {
-        background-size: rem-calc(210);
+        background-size: rem-calc(220);
+        @media #{$medium-up} {
+          background-size: rem-calc(210);
+        }
       }
       &--project-gbmp {
         background-size: rem-calc(180);
       }
       &--project-tech {
-        background-size: rem-calc(160);
+        background-size: rem-calc(190);
+        @media #{$medium-up} {
+          background-size: rem-calc(160);
+        }
       }
       &--project-cap {
-        background-size: rem-calc(140);
+        background-size: rem-calc(180);
+        @media #{$medium-up} {
+          background-size: rem-calc(140);
+        }
       }
       &--project-futures {
         background-size: rem-calc(180);

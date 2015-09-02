@@ -1,0 +1,87 @@
+.project-description {
+  @include grid-row();
+  padding-top: rem-calc(32);
+
+  &__logo {
+    @include grid-column($columns: 3);
+  }
+
+  &__main {
+    @include grid-column($columns: 8, $offset: 1);
+    h1 {
+      line-height: 1;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: rem-calc(27);
+      margin-bottom: rem-calc(12);
+    }
+
+    p {
+      display: none;
+    }
+
+    p.lede, input[type=checkbox].see-more__checkbox:checked ~ p {
+      display: block;
+    }
+  }
+
+  &__text {
+    margin-bottom: rem-calc(32);
+  }
+
+  &__gallery {
+    @include block-grid($per-row: 3, $base-style: true);
+
+    img {
+      // box-shadow: $subtle-shadow;
+      // border-radius: $global-radius;
+    }
+  }
+}
+
+.see-more{
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    color: $anchor-font-color;
+    text-decoration: $anchor-text-decoration;
+    cursor: pointer;
+    display: block;
+    margin: rem-calc(0 0 12);
+    
+    &:hover {
+      color: $anchor-font-color-hover;
+      text-decoration: $anchor-text-decoration-hover;
+    }
+
+    &--open, input[type=checkbox].see-more__checkbox:checked ~ & > &--closed {
+      display: none;
+    }
+
+    &--closed, input[type=checkbox].see-more__checkbox:checked ~ & > &--open {
+      display: inline;
+    }
+  }
+}
+
+.project-openings {
+  @include grid-row();
+  padding-top: rem-calc(32);
+
+  h3 {
+    margin-bottom: rem-calc(24);
+  }
+
+  &__list {
+    @include block-grid($per-row: 3, $base-style: true);
+
+    .panel {
+      @include callout-panel();
+    }
+  }
+}

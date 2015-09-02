@@ -1,4 +1,4 @@
-.callout-panel {
+@mixin callout-panel {
   background: $white;
   border-radius: $global-radius;
   box-shadow: $subtle-shadow;

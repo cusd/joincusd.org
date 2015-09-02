@@ -24,8 +24,12 @@
   h3 {
     margin-top: rem-calc(16);
   }
-
-  .callout-panel:not(:last-child) {
-    margin-bottom: rem-calc(24);
+  
+  &__panel {
+    @include callout-panel();
+    
+    &:not(:last-child) {
+      margin-bottom: rem-calc(24);
+    }
   }
 }

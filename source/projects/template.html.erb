@@ -1,8 +1,49 @@
 <% content_for(:title, project.name) %>
 
+<section class="project-description">
+  <div class="project-description__logo">
+    <%= image_tag "icons/projects/#{short_name}-color.svg" %>
+  </div>
+  <div class="project-description__main">
+    <h1><%= project.name %></h1>
+    <h2><%= project.tagline %></h2>
+    <div class="project-description__text">
+      <input type="checkbox" class="see-more__checkbox" id="seeMore">
+      <%= project.description %>
+      <label for="seeMore" class="see-more__label">Read <span class="see-more__label--closed">More</span><span  class="see-more__label--open">Less</span></label>
+    </div>
+    <ul class="project-description__gallery">
+      <% project.photos.each do |p| %>
+      <li>
+        <%= image_tag p %>
+      </li>
+    <% end %>
+    </ul>
+  </div>
 
+</section>
 
-
+<section class="project-openings">
+  <h3>What We're Looking For</h3>
+  <ul class="project-openings__list">
+    <% project.openings.each do |o| %>
+      <li>
+        <div class="panel">
+          <h4><%= o.title %></h4>
+          <p><%= o.desc %></p>
+          <%= link_to "Apply Now", o.link || 'https://docs.google.com/a/cornell.edu/forms/d/1xoWpz59v7SkpzRUcXRuvBT0qw4RmWI0didgraXt-Vj0/viewform', class: 'button' %>
+        </div>
+      </li>
+    <% end %>
+    <li>
+      <div class="panel">
+        <h4>Missing Something?</h4>
+        <p>Don’t see that perfect fit? No worries, apply as a wildcard!</p>
+        <%= link_to "Apply Now", 'https://docs.google.com/a/cornell.edu/forms/d/1xoWpz59v7SkpzRUcXRuvBT0qw4RmWI0didgraXt-Vj0/viewform', class: 'button' %>
+      </div>
+    </li>
+  </ul>
+</section>
 
 
 

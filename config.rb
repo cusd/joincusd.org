@@ -29,7 +29,7 @@
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 data.projects.each do |project|
-  proxy "/projects/#{project[0]}.html", "/projects/template.html", :locals => { project: project[1], title: project[1].name }
+  proxy "/projects/#{project[0]}.html", "/projects/template.html", :locals => { project: project[1], short_name: project[0] }
 end
 
 ###

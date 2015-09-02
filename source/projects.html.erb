@@ -6,8 +6,10 @@ title: Projects
   <section class="current-projects">
     <h1>Current Projects</h1>
     <article class="project">
-      <div class="icon icon--project-seg icon--project-seg--colored-bg"></div>
-      <h3>Sustainable Education Ghana</h3>
+      <% link_to '/projects/seg' do %>
+        <div class="icon icon--project-seg icon--project-seg--colored-bg"></div>
+        <h3>Sustainable Education Ghana</h3>
+      <% end %>
       <p>
         This team partners with Voices of African Mothers to develop a sustainable school for girls in an ecological hub outside of Sogakope, Ghana.
       </p>
@@ -20,8 +22,10 @@ title: Projects
       </p>
     </article>
     <article class="project">
-      <div class="icon icon--project-gbmp icon--project-gbmp--colored-bg"></div>
-      <h3>Green Building Metrics Project</h3>
+      <% link_to '/projects/gbmp' do %>
+        <div class="icon icon--project-gbmp icon--project-gbmp--colored-bg"></div>
+        <h3>Green Building Metrics Project</h3>
+      <% end %>
       <p>
         The Green Building Metrics Project is designing a metric that will allow consumers to determine how sustainable a product is so that they can make informed purchases.
       </p>

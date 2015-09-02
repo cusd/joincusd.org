@@ -35,7 +35,7 @@
       
       <div class="site-header__wrapper">
 
-        <% link_to 'index.html' do %>
+        <% link_to '/index.html' do %>
           <div class="site-logo">
             <%= image_tag "CUSD-logo.svg", class: "site-logo__image" %>
             <span class="site-logo__text">Cornell University<br>Sustainable Design</span>
@@ -46,8 +46,8 @@
             <li> 
               <a href="https://docs.google.com/forms/d/1JchSBpjYKXW0LD51yfnst8M-VQIUFsgYxbl3RAwYcZc/viewform" class="button">Apply</a>
             </li>
-            <li><%= link_to 'About', 'about.html' %></li>
-            <li><%= link_to 'Projects', 'projects.html' %></li>
+            <li><%= link_to 'About', '/about.html' %></li>
+            <li><%= link_to 'Projects', '/projects.html' %></li>
           </ul>
         </div>
 
@@ -68,9 +68,9 @@
         <div class="site-footer__links-wrapper__link-list">
           <h5>CUSD</h5>
           <ul>
-            <li><%= link_to 'Home', 'index.html' %></li>
-            <li><%= link_to 'About', 'about.html' %></li>
-            <li><%= link_to 'Projects', 'projects.html' %></li>
+            <li><%= link_to 'Home', '/index.html' %></li>
+            <li><%= link_to 'About', '/about.html' %></li>
+            <li><%= link_to 'Projects', '/projects.html' %></li>
             <li><a href="https://docs.google.com/forms/d/1JchSBpjYKXW0LD51yfnst8M-VQIUFsgYxbl3RAwYcZc/viewform">Apply</a></li>
           </ul>
         </div>
@@ -78,7 +78,7 @@
           <h5>Roles</h5>
           <ul>
             <% sitemap.resources.each do |resource| %>
-              <% if resource.path =~ /roles\// %>
+              <% if resource.path =~ /^roles\// %>
                 <li><%= link_to resource.data.title, resource %></li>
               <% end %>
             <% end %>
@@ -88,22 +88,20 @@
           <h5>Students</h5>
           <ul>
             <% sitemap.resources.each do |resource| %>
-              <% if resource.path =~ /students\// %>
+              <% if resource.path =~ /^students\// %>
                 <li><%= link_to resource.data.title, resource %></li>
               <% end %>
             <% end %>
           </ul>
         </div> -->
-        <!-- <div class="site-footer__links-wrapper__link-list--extended">
+        <div class="site-footer__links-wrapper__link-list site-footer__links-wrapper__link-list--extended">
           <h5>Projects</h5>
           <ul>
-            <% sitemap.resources.each do |resource| %>
-              <% if resource.path =~ /projects\// %>
-                <li><%= link_to resource.data.title, resource %></li>
-              <% end %>
+            <% data.projects.each do |project| %>
+              <li><%= link_to project[1].name, "/projects/#{project[0]}" %></li>
             <% end %>
           </ul>
-        </div> -->
+        </div>
         <div class="site-footer__links-wrapper__link-list">
           <h5>Connect</h5>
           <ul>
